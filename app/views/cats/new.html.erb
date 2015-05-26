@@ -1,4 +1,8 @@
 <h1>Enter details about your cat</h1>
 <%= simple_form_for @cat do |f| %>
     <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :birthday %>
+    <br/>
+    <%= f.submit 'Create', :class => 'btn btn-primary' %>
   <% end %>
