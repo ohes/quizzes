@@ -1,1 +1,10 @@
-<h1>Welcome to my awesome web app</h1>
+<%= @cats.each do |cat| %>
+	<div>
+		<h1><%= cat.name %><h1><br />
+		<i><%= cat.description %></i><br/>
+		<p><%= cat.birthday %></p><br/>
+	</div>
+
+	<hr />
+
+<% end %>
