@@ -1,8 +1,11 @@
+<li>
+	<%= link_to 'Add a New Cat', new_cat_path %>
+</li>
 <%= @cats.each do |cat| %>
 	<div>
-		<h1><%= cat.name %><h1><br />
-		<i><%= cat.description %></i><br/>
-		<p><%= cat.birthday %></p><br/>
+		<h1>Name: <%= cat.name %><h1><br />
+		<i>Description: <%= cat.description %></i><br/>
+		<p>Birthday: <%= cat.birthday %></p><br/>
 	</div>
 
 	<hr />
